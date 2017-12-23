@@ -113,3 +113,9 @@ a {
   color: #198531; }
   a:hover, a:focus, a:active {
     color: #09581a; }
+    
+.theme {
+  position: relative;
+  top: 8px;
+  right: 16px;
+  font-size: 18px; }

@@ -25,4 +25,10 @@
     target: '#sideNav'
   });
 
+    // test
+  $("#foo").click(function() {
+	//$("#foo").hide();
+  	$('body').css("background-color", "yellow");
+  });
+
 })(jQuery); // End of use strict
