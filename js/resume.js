@@ -31,4 +31,12 @@
   	$('body').css("background-color", "yellow");
   });
 
+  // Language options
+  $('[lang="zh"]').hide();
+
+  $('#switch-lang').click(function() {
+	$('[lang="zh"]').toggle();
+	$('[lang="en"]').toggle();
+  });
+
 })(jQuery); // End of use strict
