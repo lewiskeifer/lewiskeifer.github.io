@@ -28,7 +28,8 @@
     // test
   $("#foo").click(function() {
 	//$("#foo").hide();
-  	$('body').css("background-color", "yellow");
+  	$('body').css("background-color", "gray-800");
+  	//$('a').css("color", "yellow");
   });
 
   // Language options
