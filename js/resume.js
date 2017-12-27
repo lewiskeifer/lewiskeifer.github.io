@@ -25,11 +25,9 @@
     target: '#sideNav'
   });
 
-    // test
+  // testing on Wario
   $("#foo").click(function() {
-	//$("#foo").hide();
-  	$('body').css("background-color", "gray-800");
-  	//$('a').css("color", "yellow");
+  	$('a').css("color", "white");
   });
 
   // Language options
@@ -39,5 +37,16 @@
 	$('[lang="zh"]').toggle();
 	$('[lang="en"]').toggle();
   });
+
+  //Theme options
+  $('#switch-theme').click(function() {
+  	//if($(this).css("color")=="black")
+  	//{
+	//	$(this).css("color", "white");
+	//}
+	//else 
+		$(this).css("color", "black");
+  });
+
 
 })(jQuery); // End of use strict
