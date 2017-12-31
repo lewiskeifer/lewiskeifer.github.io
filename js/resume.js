@@ -27,7 +27,10 @@
 
   // testing on Wario
   $("#foo").click(function() {
-  	$('a').css("color", "white");
+	$('.js-scroll-trigger').css("color", "yellow");
+	$('#switch-lang').css("color", "yellow");
+	$('#switch-theme').css("color", "yellow");
+	//$('#sideNav').css("background-color", "yellow");
   });
 
   // Language options
@@ -40,12 +43,23 @@
 
   //Theme options
   $('#switch-theme').click(function() {
-  	//if($(this).css("color")=="black")
-  	//{
-	//	$(this).css("color", "white");
-	//}
-	//else 
+
+  	var color = $(this).css("color");
+
+  	if(color === 'rgb(0, 0, 0)' || color === 'black')
+  	{
+		$(this).css("color", "white");
+		$('#switch-lang').css("color", "white");
+		$('#switch-theme').css("color", "white");
+		$('.js-scroll-trigger').css("color", "rgba(255, 255, 255, .5)");
+	}
+	else 
+	{
 		$(this).css("color", "black");
+		$('#switch-lang').css("color", "black");
+		$('#switch-theme').css("color", "black");
+		$('.js-scroll-trigger').css("color", "black");
+	}
   });
 
 
