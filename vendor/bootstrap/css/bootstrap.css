@@ -3514,11 +3514,24 @@ tbody.collapse.show {
   padding: 0.5rem 1rem;
 }
 
+.nav-link-dark {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
 .nav-link:focus, .nav-link:hover {
   text-decoration: none;
 }
 
+.nav-link-dark:focus, .nav-link-dark:hover {
+  text-decoration: none;
+}
+
 .nav-link.disabled {
+  color: #868e96;
+}
+
+.nav-link-dark.disabled  {
   color: #868e96;
 }
 
@@ -3536,7 +3549,17 @@ tbody.collapse.show {
   border-top-right-radius: 0.25rem;
 }
 
+.nav-tabs .nav-link-dark {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color: #e9ecef #e9ecef #ddd;
+}
+
+.nav-tabs .nav-link-dark:focus, .nav-tabs .nav-link-dark:hover {
   border-color: #e9ecef #e9ecef #ddd;
 }
 
@@ -3546,8 +3569,21 @@ tbody.collapse.show {
   border-color: transparent;
 }
 
+.nav-tabs .nav-link-dark.disabled {
+  color: #868e96;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border-color: #ddd #ddd #fff;
+}
+
+.nav-tabs .nav-link-dark.active,
+.nav-tabs .nav-item.show .nav-link-dark {
   color: #495057;
   background-color: #fff;
   border-color: #ddd #ddd #fff;
@@ -3563,8 +3599,18 @@ tbody.collapse.show {
   border-radius: 0.25rem;
 }
 
+.nav-pills .nav-link-dark {
+  border-radius: 0.25rem;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.nav-pills .nav-link-dark.active,
+.nav-pills .show > .nav-link-dark {
   color: #fff;
   background-color: #007bff;
 }
@@ -3645,6 +3691,11 @@ tbody.collapse.show {
   padding-left: 0;
 }
 
+.navbar-nav .nav-link-dark {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
@@ -3718,6 +3769,18 @@ tbody.collapse.show {
     padding-right: .5rem;
     padding-left: .5rem;
   }
+  .navbar-expand-sm .navbar-nav .nav-link-dark {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+  .navbar-expand-sm .navbar-nav .nav-link-dark {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
     -ms-flex-wrap: nowrap;
@@ -3765,6 +3828,10 @@ tbody.collapse.show {
     left: auto;
   }
   .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+  .navbar-expand-md .navbar-nav .nav-link-dark {
     padding-right: .5rem;
     padding-left: .5rem;
   }
@@ -3818,6 +3885,10 @@ tbody.collapse.show {
     padding-right: .5rem;
     padding-left: .5rem;
   }
+  .navbar-expand-lg .navbar-nav .nav-link-dark {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
     -ms-flex-wrap: nowrap;
@@ -3865,6 +3936,10 @@ tbody.collapse.show {
     left: auto;
   }
   .navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+  .navbar-expand-xl .navbar-nav .nav-link-dark {
     padding-right: .5rem;
     padding-left: .5rem;
   }
@@ -3916,6 +3991,10 @@ tbody.collapse.show {
 }
 
 .navbar-expand .navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+.navbar-expand .navbar-nav .nav-link-dark {
   padding-right: .5rem;
   padding-left: .5rem;
 }
@@ -4002,11 +4081,23 @@ tbody.collapse.show {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.navbar-dark .navbar-nav .nav-link-dark {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.navbar-dark .navbar-nav .nav-link-dark:focus, .navbar-dark .navbar-nav .nav-link-dark:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 .navbar-dark .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-dark .navbar-nav .nav-link-dark.disabled {
   color: rgba(255, 255, 255, 0.25);
 }
 
@@ -4015,6 +4106,13 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link-dark,
+.navbar-dark .navbar-nav .active > .nav-link-dark,
+.navbar-dark .navbar-nav .nav-link-dark.show,
+.navbar-dark .navbar-nav .nav-link-dark.active {
+  color: rgb(255, 255, 255);
 }
 
 .navbar-dark .navbar-toggler {
