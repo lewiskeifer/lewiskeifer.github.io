@@ -25,6 +25,12 @@
     target: '#sideNav'
   });
 
+  function refreshScrollSpy() {
+    $('[data-spy="scroll"]').each(function () {
+        $(this).scrollspy('refresh');
+    }); 
+   };
+
   // testing on Wario
   $("#foo").click(function() {
 	$('.js-scroll-trigger').css("color", "yellow");
@@ -48,24 +54,27 @@
 
   	if(color === 'rgb(0, 0, 0)' || color === 'black')
   	{
-		$(this).css("color", "white");
+		//$(this).css("color", "white");
 		$('#switch-lang').css("color", "white");
 		$('#switch-theme').css("color", "white");
 		//$('.js-scroll-trigger').css("color", "rgba(255, 255, 255, .5)");
-		$('.js-scroll-trigger').removeClass("nav-link-dark").addClass("nav-link");
+		$('.js-scroll-trigger').removeClass("nav-link-dark");
+
+		refreshScrollSpy();
 	}
 	else 
 	{
-		$(this).css("color", "black");
+		//$(this).css("color", "black");
 		$('#switch-lang').css("color", "black");
 		$('#switch-theme').css("color", "black");
 		//$('.js-scroll-trigger').css("color", "black");
 		
-		//$('.nav-link:hover').css("border-color", "#000 #000 #000");
+		//$('.js-scroll-trigger').removeClass("nav-link").addClass("nav-link-dark");
+		$('.js-scroll-trigger').addClass("nav-link-dark");
 
-		//$('.js-scroll-trigger').removeClass("nav-tabs").addClass("nav-tabs-dark");
-		$('.js-scroll-trigger').removeClass("nav-link").addClass("nav-link-dark");
-		//$('.js-scroll-trigger').removeClass("nav-link:hover").addClass("nav-link-dark:hover");
+		//$('.nav-link-dark').removeClass("js-scroll-trigger").addClass("js-scroll-trigger");
+
+		refreshScrollSpy();
 	}
   });
 

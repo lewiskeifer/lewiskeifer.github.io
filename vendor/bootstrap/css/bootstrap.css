@@ -3560,7 +3560,7 @@ tbody.collapse.show {
 }
 
 .nav-tabs .nav-link-dark:focus, .nav-tabs .nav-link-dark:hover {
-  border-color: #e9ecef #e9ecef #ddd;
+  border-color: #3f3f3f #3f3f3f #000;
 }
 
 .nav-tabs .nav-link.disabled {
@@ -3584,9 +3584,9 @@ tbody.collapse.show {
 
 .nav-tabs .nav-link-dark.active,
 .nav-tabs .nav-item.show .nav-link-dark {
-  color: #495057;
-  background-color: #fff;
-  border-color: #ddd #ddd #fff;
+  color: #000;
+  background-color: #000;
+  border-color: #000 #000 #000;
 }
 
 .nav-tabs .dropdown-menu {
@@ -3611,7 +3611,7 @@ tbody.collapse.show {
 
 .nav-pills .nav-link-dark.active,
 .nav-pills .show > .nav-link-dark {
-  color: #fff;
+  color: #000;
   background-color: #007bff;
 }
 
@@ -4082,7 +4082,7 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-nav .nav-link-dark {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(75, 75, 75, 0.5);
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
@@ -4090,7 +4090,7 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-nav .nav-link-dark:focus, .navbar-dark .navbar-nav .nav-link-dark:hover {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
@@ -4112,7 +4112,7 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .active > .nav-link-dark,
 .navbar-dark .navbar-nav .nav-link-dark.show,
 .navbar-dark .navbar-nav .nav-link-dark.active {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .navbar-dark .navbar-toggler {
