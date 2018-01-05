@@ -70,6 +70,9 @@
   });
 
   //Theme options
+  $('#switch-lang').css("color", "white");
+  $('#switch-theme').css("color", "white");
+
   $('#switch-theme').click(function() {
 
   	var color = $(this).css("color");
@@ -101,5 +104,7 @@
 	else document.getElementById("k1").src="img/keifer.png";
 
   });
+
+  //$('#k1').removeClass("js-scroll-trigger");
 
 })(jQuery); // End of use strict
