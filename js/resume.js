@@ -31,12 +31,34 @@
     }); 
    };
 
-  // testing on Wario
-  $("#foo").click(function() {
-	$('.js-scroll-trigger').css("color", "yellow");
-	$('#switch-lang').css("color", "yellow");
-	$('#switch-theme').css("color", "yellow");
-	//$('#sideNav').css("background-color", "yellow");
+  // Smashball
+  $("#p6").click(function() {
+	$('body').css("background-color", "white");
+  });
+
+  // Power Ranger
+  $("#p5").click(function() {
+	$('body').css("background-color", "green");
+  });
+
+  // Wario
+  $("#p4").click(function() {
+	$('body').css("background-color", "purple");
+  });
+
+  // DBZ
+  $("#p3").click(function() {
+	$('body').css("background-color", "black");
+  });
+
+  // Psyduck
+  $("#p2").click(function() {
+	$('body').css("background-color", "yellow");
+  });
+
+  // Toad
+  $("#p1").click(function() {
+	$('body').css("background-color", "red");
   });
 
   // Language options
@@ -54,29 +76,20 @@
 
   	if(color === 'rgb(0, 0, 0)' || color === 'black')
   	{
-		//$(this).css("color", "white");
 		$('#switch-lang').css("color", "white");
 		$('#switch-theme').css("color", "white");
-		//$('.js-scroll-trigger').css("color", "rgba(255, 255, 255, .5)");
 		$('.js-scroll-trigger').removeClass("nav-link-dark");
 
 		refreshScrollSpy();
 	}
 	else 
 	{
-		//$(this).css("color", "black");
 		$('#switch-lang').css("color", "black");
 		$('#switch-theme').css("color", "black");
-		//$('.js-scroll-trigger').css("color", "black");
-		
-		//$('.js-scroll-trigger').removeClass("nav-link").addClass("nav-link-dark");
 		$('.js-scroll-trigger').addClass("nav-link-dark");
-
-		//$('.nav-link-dark').removeClass("js-scroll-trigger").addClass("js-scroll-trigger");
 
 		refreshScrollSpy();
 	}
   });
-
 
 })(jQuery); // End of use strict
