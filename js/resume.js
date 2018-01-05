@@ -92,4 +92,14 @@
 	}
   });
 
+  //Picture options
+  $('#k1').click(function() {
+	var source = document.getElementById("k1").src;
+	source = source.substr(source.length-10);
+
+	if(source === "keifer.png") document.getElementById("k1").src="img/keifer2.jpg";
+	else document.getElementById("k1").src="img/keifer.png";
+
+  });
+
 })(jQuery); // End of use strict
