@@ -152,6 +152,7 @@
 		$('#switch-lang').css("color", "rgba(255, 255, 255, .75");
 		$('#switch-theme').css("color", "white");
 		$('.js-scroll-trigger').removeClass("nav-link-dark");
+		$('body').css("background-color", "white");
 
 		$('.bg-primary').each(function () {
 		    this.style.setProperty( 'background-color', '#198531', 'important' );
@@ -171,6 +172,7 @@
 		$('#switch-lang').css("color", "rgba(0, 0, 0, .75");
 		$('#switch-theme').css("color", "black");
 		$('.js-scroll-trigger').addClass("nav-link-dark");
+		$('body').css("background-color", "black");
 
 /*		$('.bg-primary').each(function () {
 		    this.style.setProperty( 'background-color', '#361985', 'important' );
