@@ -90,6 +90,8 @@
   });
 
   //Theme options
+  $('#switch-lang').css("color", "white"); //ie support
+  $('#switch-theme').css("color", "white"); //ie support
   $('#switch-lang').css("color", "rgba(255, 255, 255, .75");
   $('#switch-theme').css("color", "rgba(255, 255, 255, .75");
 
@@ -97,7 +99,7 @@
   	
   	var color = $(this).css("color");
 
-  	if(color === 'rgba(0, 0, 0, 0.75)')
+  	if(color === 'rgba(0, 0, 0, 0.75)' || color === "rgb(0, 0, 0)" || color === "black")
   	{
       $(this).css("color", "black");
 	}
@@ -106,7 +108,7 @@
 
   	 var color = $(this).css("color");
 
-  	 if(color === 'rgb(0, 0, 0)' || color === "black")
+  	 if(color === 'rgba(0, 0, 0, 0.75)' || color === "rgb(0, 0, 0)" || color === "black")
   	 {
        $(this).css("color", "rgba(0, 0, 0, .75");
      }
@@ -121,7 +123,7 @@
   	
   	var color = $(this).css("color");
 
-  	if(color === 'rgba(0, 0, 0, 0.75)')
+  	if(color === 'rgba(0, 0, 0, 0.75)' || color === "rgb(0, 0, 0)" || color === "black")
   	{
       $(this).css("color", "black");
 	}
@@ -133,7 +135,7 @@
 
   	 var color = $(this).css("color");
 
-  	 if(color === 'rgb(0, 0, 0)' || color === 'black' || color === "rgba(0, 0, 0, 0.75)")
+  	 if(color === "rgba(0, 0, 0, 0.75)" || color === "rgb(0, 0, 0)" || color === 'black')
   	 {
        $(this).css("color", "rgba(0, 0, 0, .75");
      }
@@ -149,6 +151,7 @@
 
   	if(color === 'rgb(0, 0, 0)' || color === 'black')
   	{
+  		$('#switch-lang').css("color", "white"); //ie support
 		$('#switch-lang').css("color", "rgba(255, 255, 255, .75");
 		$('#switch-theme').css("color", "white");
 		$('.js-scroll-trigger').removeClass("nav-link-dark");
@@ -169,6 +172,7 @@
 	}
 	else 
 	{
+		$('#switch-lang').css("color", "black"); //ie support
 		$('#switch-lang').css("color", "rgba(0, 0, 0, .75");
 		$('#switch-theme').css("color", "black");
 		$('.js-scroll-trigger').addClass("nav-link-dark");
