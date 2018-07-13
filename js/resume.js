@@ -201,8 +201,8 @@
 	var source = document.getElementById("k1").src;
 	source = source.substr(source.length-10);
 
-	if(source === "keifer.png") document.getElementById("k1").src="img/keifer2.jpg";
-	else document.getElementById("k1").src="img/keifer.png";
+	if(source === "keifer.jpg") document.getElementById("k1").src="img/keifer2.jpg";
+	else document.getElementById("k1").src="img/keifer.jpg";
 
   });
 
