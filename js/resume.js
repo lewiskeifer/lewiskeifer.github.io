@@ -178,20 +178,6 @@
 		$('.js-scroll-trigger').addClass("nav-link-dark");
 		$('body').css("background-color", "black");
 
-/*		$('.bg-primary').each(function () {
-		    this.style.setProperty( 'background-color', '#361985', 'important' );
-		});
-
-		$('.text-primary').each(function () {
-		    this.style.setProperty( 'color', '#361985', 'important' );
-		});*/
-
-		//$('.list-icons .list-inline-item i:hover').css('color', 'yellow');
-		//$('i:hover').css('color', 'yellow');
-		//$('.list-inline-item').css('color', 'yellow');
-		//$('.list-icons').css('color', 'yellow');
-		//$('li:hover').css('color', 'yellow');
-
 		refreshScrollSpy();
 	}
   });
